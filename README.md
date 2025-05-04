@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server for Compresto, providing AI assistants with real-time data about Compresto's usage statistics.
 
+<a href="https://glama.ai/mcp/servers/@dqhieu/compresto-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@dqhieu/compresto-mcp/badge" alt="Compresto MCP server" />
+</a>
+
 ## What is Compresto?
 
 Compresto is a file compression app that helps users reduce file sizes. This MCP server allows AI assistants to access current statistics about Compresto's usage.
