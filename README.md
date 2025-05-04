@@ -26,15 +26,17 @@ npm run build
 ## Manual Configuration
 
 Add the following to your MCP settings file
-```bash
+```json
 {
   "mcpServers": {
-      "compresto": {
-          
-      }
+    "compresto": {
+      "command": "node",
+      "args": [
+        "/ABSOLUTE/PATH/TO/PARENT/FOLDER/compresto-mcp/build/index.js"
+      ]
+    }
   }
 }
-
 ```
 
 When integrated with compatible AI assistants, this MCP server provides real-time data about Compresto's usage.
