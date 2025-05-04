@@ -4,23 +4,8 @@ import { EvalConfig } from 'mcp-evals';
 import { openai } from "@ai-sdk/openai";
 import { grade, EvalFunction } from "mcp-evals";
 
-const getTotalUsersEval: EvalFunction = {
-  name: "getTotalUsersEval",
-  description: "Evaluates the get-total-users tool functionality",
-  run: async () => {
-    const result = await grade(openai("gpt-4"), "How many total Compresto users are there?");
-    return JSON.parse(result);
-  }
-};
 
-const getTotalProcessedFilesEval: EvalFunction = {
-    name: "get-total-processed-files Evaluation",
-    description: "Evaluates the total processed files retrieval from Compresto",
-    run: async () => {
-        const result = await grade(openai("gpt-4"), "How many files has Compresto processed so far?");
-        return JSON.parse(result);
-    }
-};
+
 
 const getTotalSizeReducedEval: EvalFunction = {
     name: "get-total-size-reduced Tool Evaluation",
